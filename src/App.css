@@ -58,7 +58,8 @@ body {
 }
 
 .btn:hover {
-  background-color: #1aa762;
+  background-color: #2C1628ff;
+  color: white;
   opacity: 1;
   cursor: pointer;
 }
