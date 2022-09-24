@@ -1,9 +1,14 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import {ResultCard} from "./ResultCard"
+import {GlobalContext} from "../context/GlobalState";
 
 export const Add = () => {
   const [query, setQuery] = useState("")
   const [results, setResults] = useState([])
+
+  const {
+    watchlist
+  } = useContext(GlobalContext)
 
   const onChange = e => {
     e.preventDefault()
